@@ -33,6 +33,7 @@ from typing import Optional
 
 from agno.agent import Agent
 from agno.embedder.openai import OpenAIEmbedder
+from agno.embedder.ollama import OllamaEmbedder
 from agno.knowledge import AgentKnowledge
 # from agno.models.anthropic import Claude
 # from agno.models.google import Gemini
@@ -78,8 +79,8 @@ def get_agentic_rag_agent(
             db_url=db_url,
             table_name="agentic_rag_documents",
             schema="ai",
-            # Use OpenAI embeddings
-            embedder=OpenAIEmbedder(id="text-embedding-3-small"),
+            # Use ollama embeddings
+            embedder=OllamaEmbedder(id="nomic-embed-text:latest"),
         ),
         num_documents=3,  # Retrieve 3 most relevant documents
     )

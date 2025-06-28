@@ -25,7 +25,7 @@ from utils import (
 
 nest_asyncio.apply()
 st.set_page_config(
-    page_title="Agentic RAG",
+    page_title="1Student1School",
     page_icon="💎",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -75,7 +75,7 @@ def main():
         # "claude-3-5-sonnet": "anthropic:claude-3-5-sonnet-20241022",
         # "llama-3.3-70b": "groq:llama-3.3-70b-versatile",
         "gemma3n:e4b": "ollama:gemma3n:e4b"
-        
+
     }
     selected_model = st.sidebar.selectbox(
         "Select a model",
