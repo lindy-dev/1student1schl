@@ -11,18 +11,14 @@ st.sidebar.success("Select a demo above.")
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+    # What is 1Student1School?
+
+    1Student1School is an educational platform that uses advanced AI and machine learning techniques to provide personalized education to students. Our platform is designed to adapt to the individual needs of each student, providing them with the best possible learning experience.
+    ## Features
+    - **Personalized Learning**: Our platform uses AI to tailor the learning experience to each student's unique needs and learning style.
+    - **Multi-Agent Teachers**: We employ a team of AI agents, each specializing in different subjects, to provide comprehensive education.
+    - **Interactive Learning**: Our platform includes interactive tools and resources to engage students and enhance their learning experience.
+    - **Progress Tracking**: Students can track their progress and receive feedback on their performance.
+
 """
 )
