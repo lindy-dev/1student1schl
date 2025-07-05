@@ -8,11 +8,6 @@ st.title("General QA chatbot")
 # Model selector
 ####################################################################
 model_options = {
-    # "o3-mini": "openai:o3-mini",
-    # "gpt-4o": "openai:gpt-4o",
-    # "gemini-2.0-flash-exp": "google:gemini-2.0-flash-exp",
-    # "claude-3-5-sonnet": "anthropic:claude-3-5-sonnet-20241022",
-    # "llama-3.3-70b": "groq:llama-3.3-70b-versatile",
     "gemma3n:e4b": "gemma3n:e4b",
     "gemma3n:e2b": "gemma3n:e2b"
 
