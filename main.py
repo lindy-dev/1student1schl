@@ -13,7 +13,7 @@ st.markdown(
     """
     # What is 1Student1School?
 
-    1Student1School is an educational platform that uses advanced AI and machine learning techniques to provide personalized education to students. Our platform is designed to adapt to the individual needs of each student, providing them with the best possible learning experience.
+    1Student1School A school of multi-agent teachers hyper-personalized to teach you!👋
     ## Features
     - **Personalized Learning**: Our platform uses AI to tailor the learning experience to each student's unique needs and learning style.
     - **Multi-Agent Teachers**: We employ a team of AI agents, each specializing in different subjects, to provide comprehensive education.
