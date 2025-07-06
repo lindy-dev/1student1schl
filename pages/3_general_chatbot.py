@@ -1,7 +1,7 @@
 import streamlit as st
 from ollama import Client
 from ollama import chat
-st.title("General QA chatbot")
+st.title("General Q&A chatbot")
 
 
 ####################################################################
@@ -21,6 +21,38 @@ selected_model = st.sidebar.selectbox(
 model_id = model_options[selected_model]
 print(f"Selected model: {model_id}")
 ####################################################################
+# Add a grade level selector to the sidebar
+####################################################################
+grade_levels = {
+    "1st Grade": "1st Grade",
+    "2nd Grade": "2nd Grade",
+    "3rd Grade": "3rd Grade",
+    "4th Grade": "4th Grade",
+    "5th Grade": "5th Grade",
+    "6th Grade": "6th Grade",
+    "7th Grade": "7th Grade",
+    "8th Grade": "8th Grade",
+    "9th Grade": "9th Grade",
+    "10th Grade": "10th Grade",
+    "11th Grade": "11th Grade",
+    "12th Grade": "12th Grade"
+}
+selected_grade = st.sidebar.selectbox(
+    "Select a grade level",
+    options=list(grade_levels.keys()),
+    index=0,
+    key="grade_selector",
+)
+grade_level = grade_levels[selected_grade]
+print(f"Selected grade level: {grade_level}")
+
+
+#####################################################################
+# New chat session button 
+#####################################################################
+if st.sidebar.button("Start a new chat"):
+    st.session_state.messages = []
+    st.session_state["ollama_model"] = model_id
 
 
 
@@ -40,20 +72,16 @@ if prompt := st.chat_input("What is up?"):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        # stream = client.chat.completions.create(
-        #     model=st.session_state["ollama_model"],
-        #     messages=[
-        #         {"role": m["role"], "content": m["content"]}
-        #         for m in st.session_state.messages
-        #     ],
-        #     stream=True,
-        # )
+        # Initialize the system prompt with the selected grade level
+        messages = [
+            {"role": "system", "content": f"You are a helpful assistant for a {grade_level} student."},
+            
+        ]
+        messages.extend({"role": m["role"], "content": m["content"]}
+            for m in st.session_state.messages)
         stream = chat(
             model=model_id,
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
+            messages= messages,
             stream=True,
         )
         def content_generator():
