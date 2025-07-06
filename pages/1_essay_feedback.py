@@ -29,7 +29,7 @@ st.title("Essay Feedback")
 # Input fields
 essay_question = st.text_input("Essay Question")
 essay_text = st.text_area("Essay Text", height=200)
-grade_level = st.selectbox("Select Grade Level", ["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5"])
+grade_level = st.selectbox("Select Grade Level", ["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6", "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"])
 
 # Submit button
 if st.button("Submit"):
