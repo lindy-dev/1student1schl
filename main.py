@@ -7,7 +7,7 @@ st.set_page_config(
 
 st.write("# Welcome to 1Student1School! A school of multi-agent teachers hyper-personalized to teach you!👋")
 
-st.sidebar.success("Select a demo above.")
+st.sidebar.success("Select a program above.")
 
 st.markdown(
     """
@@ -15,10 +15,10 @@ st.markdown(
 
     1Student1School A school of multi-agent teachers hyper-personalized to teach you!👋
     ## Features
-    - **Personalized Learning**: Our platform uses AI to tailor the learning experience to each student's unique needs and learning style.
+    - **Privacy first**: We prioritize student privacy and data security, ensuring a safe learning environment. 
     - **Multi-Agent Teachers**: We employ a team of AI agents, each specializing in different subjects, to provide comprehensive education.
     - **Interactive Learning**: Our platform includes interactive tools and resources to engage students and enhance their learning experience.
-    - **Progress Tracking**: Students can track their progress and receive feedback on their performance.
+    
 
 """
 )
