@@ -1,6 +1,6 @@
 # About
 
-1Student1School is a school of multi-agent teachers hyper-personalized to teach you!👋 A provacy first solution that runs completely on your local machine with no data sent to the cloud. Get essay feedback, homework help, and more!
+1Student1School is a school of multi-agent teachers hyper-personalized to teach you!👋 A privacy first solution that runs completely on your local machine with no data sent to the cloud. Get essay feedback, homework help, and more!
 
 # Installation
 
